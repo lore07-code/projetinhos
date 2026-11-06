@@ -1,0 +1,137 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aparência da página */
+body {
+    min-height: 100vh;
+    background: #100d1c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 25px;
+}
+
+/* Área principal */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #a970ff;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #c5bad6;
+    font-size: 15px;
+}
+
+/* Painel */
+.painel {
+    background: #1c1729;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #35294b;
+}
+
+/* Seleção de imagem */
+.upload {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.upload label {
+    background: #a970ff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upload input {
+    display: none;
+}
+
+/* Canvas */
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background: #100d1c;
+    border: 1px solid #493765;
+    border-radius: 15px;
+}
+
+/* Controles */
+.controles {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.controles label {
+    color: #e0d5f0;
+    font-size: 14px;
+}
+
+.controles input {
+    width: 100%;
+    accent-color: #a970ff;
+}
+
+/* Botão */
+button {
+    background: #a970ff;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+.upload label:hover {
+    background: #8c4fe0;
+}
+
+/* Mensagem de status */
+#status {
+    text-align: center;
+    color: #c5bad6;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .painel {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Particle Art Studio</title>
+
+    <!-- Conexão com o CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Conexão com o JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Particle Art Studio</h1>
+
+            <p>
+                Transforme suas imagens em arte com partículas.
+            </p>
+        </header>
+
+        <main class="painel">
+
+            <!-- Seleção da imagem -->
+            <section class="upload">
+
+                <label for="foto">
+                    Escolher imagem
+                </label>
+
+                <input
+                    type="file"
+                    id="foto"
+                    accept="image/*"
+                >
+
+            </section>
+
+            <!-- Área onde as partículas aparecem -->
+            <canvas id="canvas"></canvas>
+
+            <!-- Controles do projeto -->
+            <section class="controles">
+
+                <label for="velocidade">
+                    Velocidade das partículas
+                </label>
+
+                <input
+                    type="range"
+                    id="velocidade"
+                    min="0.01"
+                    max="0.30"
+                    step="0.01"
+                    value="0.08"
+                >
+
+                <button id="reiniciar">
+                    Reiniciar imagem
+                </button>
+
+            </section>
+
+            <!-- Mensagem de funcionamento -->
+            <p id="status">
+                JavaScript conectado! Escolha uma foto.
+            </p>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
